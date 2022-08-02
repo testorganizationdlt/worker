@@ -1,0 +1,10 @@
+name: Worker
+
+on:
+  workflow_call:
+  
+jobs:
+  - test:
+    - steps:
+      - name: Echo Teste
+        run: echo Teste
