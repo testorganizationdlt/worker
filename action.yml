@@ -1,0 +1,11 @@
+name: Worker
+  
+runs:
+  using: "composite"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Teste
+        run: echo Teste
+      - name: Echo Teste2
+        run: echo Teste2
