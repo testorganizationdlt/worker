@@ -1,10 +1,11 @@
 name: Worker
 
 on:
-  workflow_call:
+  workflow_call
   
 jobs:
-  - test:
-    - steps:
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - name: Echo Teste
         run: echo Teste
